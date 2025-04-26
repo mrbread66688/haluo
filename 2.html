@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chart.js 测试</title>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <canvas id="myChart" width="400" height="400"></canvas>
+    <script>
+        new Chart(document.getElementById('myChart'), {
+            type: 'bar',
+            data: { labels: ['A', 'B'], datasets: [{ data: [1,2] }] }
+        });
+    </script>
+</body>
+</html>
